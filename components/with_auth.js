@@ -1,8 +1,9 @@
 // @flow
-import React, { Component, PropTypes } from 'react'
-import {connect} from 'react-redux';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import {connect} from 'react-redux'
 import {Text, View}  from 'react-native'
-import {loginUser} from '../actions';
+import {loginUser} from '../actions'
 
 function connectLogin(rawLogin, keyName, endpointUrl) {
   const mapStateToProps = (state) => (
